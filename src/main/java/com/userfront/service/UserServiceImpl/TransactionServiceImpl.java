@@ -1,9 +1,11 @@
 package com.userfront.service.UserServiceImpl;
 
-import com.userfront.dao.*;
+import com.userfront.dao.AccountDao;
+import com.userfront.dao.CostDao;
+import com.userfront.dao.IncomeDao;
+import com.userfront.dao.SavingsAccountDao;
 import com.userfront.domain.Cost;
 import com.userfront.domain.Income;
-import com.userfront.domain.Recipient;
 import com.userfront.domain.User;
 import com.userfront.service.TransactionService;
 import com.userfront.service.UserService;

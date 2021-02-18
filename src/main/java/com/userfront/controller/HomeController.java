@@ -1,20 +1,21 @@
 package com.userfront.controller;
 
-import java.security.Principal;
-import java.util.HashSet;
-import java.util.Set;
-
-import com.userfront.domain.Account;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
-
 import com.userfront.dao.RoleDao;
+import com.userfront.domain.Account;
 import com.userfront.domain.SavingsAccount;
 import com.userfront.domain.User;
 import com.userfront.domain.security.UserRole;
 import com.userfront.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import java.security.Principal;
+import java.util.HashSet;
+import java.util.Set;
 
 @Controller
 public class HomeController {
